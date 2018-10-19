@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Backend Code Challenge</h1>
+
+<form method="GET" action="/getapps" th:object="${section}">
+    <label for="file">Choose File: </label><input type="file" name="file" /><br/><br/>
+    <label for="username">Username: </label><input type="text" name="username" th:field="*{username}"/><br/><br/>
+    <label for="username">Password: </label><input type="password" name="password" th:field="*{password}"/> <br/><br/>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
